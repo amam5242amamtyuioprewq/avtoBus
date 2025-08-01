@@ -541,7 +541,7 @@ function initApp() {
     document.getElementById('route-name').textContent = `${ticketData.route_name}`;
     document.getElementById('bus').textContent = ticketData.bus_number;
 
-    const pricePerTicket = ticketData.route_number && (ticketData.route_number.endsWith('т') || ticketData.route_number == 1) ? 31 : 35;
+    const pricePerTicket = ticketData.route_number && (ticketData.route_number.endsWith('т') || ticketData.route_number == 1) ? 40 : 44;
     const ticketCount = parseInt(ticketData.ticket_count);
     const totalPrice = pricePerTicket * ticketCount;
 
